@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order for popular menu.css">
+    <title>Windsor Star Grill - Order</title>
+    <link rel="icon" href="image/n_848c59c-3819-49c9-af28-cc434@2x.png">
+    <script type="text/javascript">
+        function welcome() {
+            document.getElementById('orderMessage').innerHTML = "We will reach out to you soon. Please choose your order, and it will be processed under the name you submit. Thanks!";
+            document.getElementById("orderMessage").style.color = "blue";
+            document.getElementById("orderMessage").style.textAlign = "center";
+        }
+
+        var name = prompt("Enter your name please!", "");
+        alert("Nice to see you " + name + "! Welcome to Windsor Star Grill!");
+    </script>
+</head>
+
+<body>
+    <header>
+        <h2>WINDSOR STAR GRILL</h2>
+        <hr>
+        <img src="image/WhatsApp Image 2023-07-24 at 23.12.43.jpeg" id="logo" alt="Windsor Star Grill Logo">
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h3>Order Now</h3>
+            <form action="mail.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number" maxlength="8" required>
+                <br>
+                <label for="order">Order Name:</label>
+                <input type="text" id="order" name="order_name" placeholder="Enter your order" required>
+                <br>
+                <button type="button" onclick="welcome()">Submit</button>
+                <p id="orderMessage"></p>
+            </form>
+        </section>
+
+        <section class="menu">
+            <h3>Popular Menu</h3>
+            <div class="menu-item">
+                <p><strong>1. Agneau (Lamb)</strong> - RS.475 <br> (Bread, salad, and chips)</p>
+            </div>
+            <div class="menu-item">
+                <p><strong>2. Fillet Grill</strong> - RS.210 <br> (Bread, salad, and chips)</p>
+            </div>
+            <div class="menu-item">
+                <p><strong>3. Brochette Grill</strong> - RS.180 <br> (Bread, salad, and chips)</p>
+            </div>
+            <div class="menu-item">
+                <p><strong>4. Mix Grill</strong> - RS.630 <br> (Bread, salad, and chips)</p>
+            </div>
+            <div class="menu-item">
+                <p><strong>5. La Cuisse</strong> - RS.210 <br> (Bread, salad, and chips)</p>
+            </div>
+            <div class="menu-item">
+                <p><strong>6. Beef</strong> - RS.365 <br> (Bread, salad, and chips)</p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="popular_menu.html">Popular Menu</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/WSGRestaurant?mibextid=9R9pXO" target="_blank"><img src="image/download (30).png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="image/logo-instagram-png-13547.png" alt="Instagram"></a>
+            <a href="windsorstargrill@gmail.com"><img src="image/4672500.png" alt="Email"></a>
+        </div>
+        <p>&copy; 2023 WINDSOR STAR GRILL. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
